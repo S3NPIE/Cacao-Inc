@@ -15,6 +15,50 @@
             font-family: 'Poppins', sans-serif;
         }
 
+        .header {
+            background-color: #fff;
+            padding: 20px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+        }
+
+        #MenuItems {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #MenuItems li {
+            margin-right: 20px;
+        }
+
+        #MenuItems li:last-child {
+            margin-right: 0;
+        }
+
+        #MenuItems a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            font-size: 16px;
+        }
+
         .account-container {
             background-color: #f4f4f4;
             padding: 50px 0;
@@ -69,7 +113,16 @@
 <body>
     <div class="header">   
         <div class="container">
-            <!-- Navbar code from your previous design -->
+            <img src="path/to/your/logo.png" alt="Cocoa Inc. Logo" class="logo">
+            <div class="navbar">
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="your-account-link">Account</a></li> <!-- Replace your-account-link with the actual link to your account page -->
+                </ul>
+            </div>
         </div>
     </div>
 
