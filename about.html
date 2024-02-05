@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Cocoa</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" width="125px" alt="Cocoa Logo">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Account</a></li>
+                </ul>
+            </nav>
+            <img src="images/cart.png" width="30px" height="30px" alt="Shopping Cart">
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" alt="Menu Icon">
+        </div>
+    </div>
+
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>About Us</h2>
+			<p>Indulge in the world of premium cocoa with Cocoa Inc. With an unwavering passion for excellence, we meticulously craft each chocolate, ensuring a taste that transcends expectations. Elevate your senses with our decadent creations.
+</p>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/user-2.png" alt="Team Member 1">
+                <h4>Jessa Angela Butas</h4>
+                <p>Founder & Chocolatier</p>
+            </div>
+            <div class="col-4">
+                <img src="images/user-1.png" alt="Team Member 2">
+                <h4>Dibbie Ann Tan</h4>
+                <p>Master Chocolatier</p>
+            </div>
+            <div class="col-4">
+                <img src="images/user-3.png" alt="Team Member 3">
+                <h4>Michael Angelo Camarillo</h4>
+                <p>Head of Sustainability</p>
+            </div>
+            <div class="col-4">
+                <img src="images/user-6.png" alt="Team Member 4">
+                <h4>Lorenzo Nosal</h4>
+                <p>Customer Experience Manager</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and iOS mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" alt="Play Store Logo">
+                        <img src="images/app-store.png" alt="App Store Logo">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo-white.png" alt="Cocoa Logo">
+                    <p>Our Purpose Is To Sustainably Make the Pleasure and to Get your Favorite Cocoa Products.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">&copy; 2024 Cocoa. All rights reserved.</p>
+        </div>
+    </div>
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+</html>
