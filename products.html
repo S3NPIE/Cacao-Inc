@@ -23,8 +23,21 @@
                 <li><a href="account.html">Account</a></li>
             </ul>
         </nav>
-        <img src="images/cart.png" width="30px" height="30px">
-        <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        <a href="add-to-cart-page.html">
+    <img src="images/cart.png" width="30px" height="30px" alt="Cart">
+</a>
+
+<button onclick="menuToggle()" class="menu-icon">
+    <img src="images/menu.png" width="30px" height="30px" alt="Menu">
+</button>
+
+<script>
+    function menuToggle() {
+        // Add your menu toggle functionality here
+        alert('Menu button clicked!');
+    }
+</script>
+
     </div> 
     
  </div>    
